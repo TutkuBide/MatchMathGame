@@ -3,27 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3A3A9686CA0E1770C62A01 /* Pods_matchGame_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270CF872C412E7707BDD612D /* Pods_matchGame_App.framework */; };
+		85950244239BE5C20096DC28 /* levelModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85950243239BE5C20096DC28 /* levelModelView.swift */; };
+		85950246239C195F0096DC28 /* LeaderBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85950245239C195F0096DC28 /* LeaderBoardTableViewCell.swift */; };
 		85A3174B239607E600E7D551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3174A239607E600E7D551 /* AppDelegate.swift */; };
 		85A3174D239607E600E7D551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3174C239607E600E7D551 /* SceneDelegate.swift */; };
-		85A3174F239607E600E7D551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3174E239607E600E7D551 /* ViewController.swift */; };
+		85A3174F239607E600E7D551 /* signVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3174E239607E600E7D551 /* signVC.swift */; };
 		85A31752239607E600E7D551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A31750239607E600E7D551 /* Main.storyboard */; };
 		85A31754239607E700E7D551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A31753239607E700E7D551 /* Assets.xcassets */; };
 		85A31757239607E700E7D551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A31755239607E700E7D551 /* LaunchScreen.storyboard */; };
+		85A317632396169900E7D551 /* registerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A317622396169800E7D551 /* registerVC.swift */; };
+		85A8A7FF239A975A003B4A6B /* gameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8A7FE239A975A003B4A6B /* gameModel.swift */; };
+		85A93F96239A645A00B71B7C /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F95239A645A00B71B7C /* loginVC.swift */; };
+		85A93F98239A652700B71B7C /* gameScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F97239A652700B71B7C /* gameScreenVC.swift */; };
+		85A93F9A239A655000B71B7C /* leaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F99239A654F00B71B7C /* leaderBoardVC.swift */; };
+		85A93F9C239A67D400B71B7C /* homeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F9B239A67D400B71B7C /* homeVC.swift */; };
+		85A93F9E239A684E00B71B7C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F9D239A684E00B71B7C /* CollectionViewCell.swift */; };
+		85A93FA0239A693B00B71B7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85A93F9F239A693A00B71B7C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AA142845C1C5B84EF8AB5BF /* Pods-matchGame-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-matchGame-App.release.xcconfig"; path = "Target Support Files/Pods-matchGame-App/Pods-matchGame-App.release.xcconfig"; sourceTree = "<group>"; };
+		270CF872C412E7707BDD612D /* Pods_matchGame_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_matchGame_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85950243239BE5C20096DC28 /* levelModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = levelModelView.swift; sourceTree = "<group>"; };
+		85950245239C195F0096DC28 /* LeaderBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardTableViewCell.swift; sourceTree = "<group>"; };
 		85A31747239607E600E7D551 /* matchGame-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "matchGame-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A3174A239607E600E7D551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85A3174C239607E600E7D551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85A3174E239607E600E7D551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85A3174E239607E600E7D551 /* signVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signVC.swift; sourceTree = "<group>"; };
 		85A31751239607E600E7D551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85A31753239607E700E7D551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85A31756239607E700E7D551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85A31758239607E700E7D551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A317622396169800E7D551 /* registerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerVC.swift; sourceTree = "<group>"; };
+		85A8A7FE239A975A003B4A6B /* gameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameModel.swift; sourceTree = "<group>"; };
+		85A93F95239A645A00B71B7C /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		85A93F97239A652700B71B7C /* gameScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameScreenVC.swift; sourceTree = "<group>"; };
+		85A93F99239A654F00B71B7C /* leaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderBoardVC.swift; sourceTree = "<group>"; };
+		85A93F9B239A67D400B71B7C /* homeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeVC.swift; sourceTree = "<group>"; };
+		85A93F9D239A684E00B71B7C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		85A93F9F239A693A00B71B7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F91690C8115970CE39C8895B /* Pods-matchGame-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-matchGame-App.debug.xcconfig"; path = "Target Support Files/Pods-matchGame-App/Pods-matchGame-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3A3A9686CA0E1770C62A01 /* Pods_matchGame_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30AFE2774EB8C5C602BA8B65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F91690C8115970CE39C8895B /* Pods-matchGame-App.debug.xcconfig */,
+				0AA142845C1C5B84EF8AB5BF /* Pods-matchGame-App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85025EA0239B0E5B00B05AF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85A8A7FE239A975A003B4A6B /* gameModel.swift */,
+				85950243239BE5C20096DC28 /* levelModelView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85025EA1239B0E7D00B05AF4 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				85A3174E239607E600E7D551 /* signVC.swift */,
+				85A317622396169800E7D551 /* registerVC.swift */,
+				85A93F95239A645A00B71B7C /* loginVC.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		85025EA2239B0E9E00B05AF4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				85950245239C195F0096DC28 /* LeaderBoardTableViewCell.swift */,
+				85A93F9D239A684E00B71B7C /* CollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		857A5A59239D147400A22B7C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85A93F9B239A67D400B71B7C /* homeVC.swift */,
+				85A93F97239A652700B71B7C /* gameScreenVC.swift */,
+				85A93F99239A654F00B71B7C /* leaderBoardVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		85A3173E239607E600E7D551 = {
 			isa = PBXGroup;
 			children = (
 				85A31749239607E600E7D551 /* matchGame-App */,
 				85A31748239607E600E7D551 /* Products */,
+				30AFE2774EB8C5C602BA8B65 /* Pods */,
+				B99189983D145DAF31C87241 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +132,25 @@
 			children = (
 				85A3174A239607E600E7D551 /* AppDelegate.swift */,
 				85A3174C239607E600E7D551 /* SceneDelegate.swift */,
-				85A3174E239607E600E7D551 /* ViewController.swift */,
+				85025EA0239B0E5B00B05AF4 /* Model */,
+				857A5A59239D147400A22B7C /* ViewControllers */,
+				85025EA1239B0E7D00B05AF4 /* Sign */,
+				85025EA2239B0E9E00B05AF4 /* Cells */,
 				85A31750239607E600E7D551 /* Main.storyboard */,
 				85A31753239607E700E7D551 /* Assets.xcassets */,
 				85A31755239607E700E7D551 /* LaunchScreen.storyboard */,
 				85A31758239607E700E7D551 /* Info.plist */,
+				85A93F9F239A693A00B71B7C /* GoogleService-Info.plist */,
 			);
 			path = "matchGame-App";
+			sourceTree = "<group>";
+		};
+		B99189983D145DAF31C87241 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				270CF872C412E7707BDD612D /* Pods_matchGame_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85A3175B239607E700E7D551 /* Build configuration list for PBXNativeTarget "matchGame-App" */;
 			buildPhases = (
+				946B7A19801DE48676E7C15F /* [CP] Check Pods Manifest.lock */,
 				85A31743239607E600E7D551 /* Sources */,
 				85A31744239607E600E7D551 /* Frameworks */,
 				85A31745239607E600E7D551 /* Resources */,
+				B0F618D31641A9DE00EF39D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85A31757239607E700E7D551 /* LaunchScreen.storyboard in Resources */,
+				85A93FA0239A693B00B71B7C /* GoogleService-Info.plist in Resources */,
 				85A31754239607E700E7D551 /* Assets.xcassets in Resources */,
 				85A31752239607E600E7D551 /* Main.storyboard in Resources */,
 			);
@@ -133,13 +222,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		946B7A19801DE48676E7C15F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-matchGame-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0F618D31641A9DE00EF39D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-matchGame-App/Pods-matchGame-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-matchGame-App/Pods-matchGame-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-matchGame-App/Pods-matchGame-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85A31743239607E600E7D551 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A3174F239607E600E7D551 /* ViewController.swift in Sources */,
+				85A3174F239607E600E7D551 /* signVC.swift in Sources */,
+				85A93F9C239A67D400B71B7C /* homeVC.swift in Sources */,
+				85A93F9E239A684E00B71B7C /* CollectionViewCell.swift in Sources */,
+				85A93F9A239A655000B71B7C /* leaderBoardVC.swift in Sources */,
+				85A93F96239A645A00B71B7C /* loginVC.swift in Sources */,
+				85950246239C195F0096DC28 /* LeaderBoardTableViewCell.swift in Sources */,
+				85A8A7FF239A975A003B4A6B /* gameModel.swift in Sources */,
+				85A317632396169900E7D551 /* registerVC.swift in Sources */,
 				85A3174B239607E600E7D551 /* AppDelegate.swift in Sources */,
+				85A93F98239A652700B71B7C /* gameScreenVC.swift in Sources */,
+				85950244239BE5C20096DC28 /* levelModelView.swift in Sources */,
 				85A3174D239607E600E7D551 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +422,7 @@
 		};
 		85A3175C239607E700E7D551 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91690C8115970CE39C8895B /* Pods-matchGame-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +440,7 @@
 		};
 		85A3175D239607E700E7D551 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA142845C1C5B84EF8AB5BF /* Pods-matchGame-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,10 +9,16 @@
 import UIKit
 
 class signVC: UIViewController {
-
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        registerButton.layer.cornerRadius = 25
+        registerButton.clipsToBounds = true
+        loginButton.layer.cornerRadius = 25
+        loginButton.clipsToBounds = true
     }
     @IBAction func registerButton(_ sender: Any) {
         performSegue(withIdentifier: "toRegisterPage", sender: nil)

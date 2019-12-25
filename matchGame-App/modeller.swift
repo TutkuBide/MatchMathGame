@@ -7,3 +7,12 @@
 //
 
 import Foundation
+class modelxx: modelView {
+    var level1 = [model]()
+    
+    override init {
+        super.init()
+        level1.append(model(imageName: "card1", imageID: 1, status: false))
+        
+    }
+}

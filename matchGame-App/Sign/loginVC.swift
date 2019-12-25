@@ -12,10 +12,12 @@ import Firebase
 class loginVC: UIViewController {
     @IBOutlet weak var mailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
-    
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        loginButton.layer.cornerRadius = 25
+        loginButton.clipsToBounds = true
     }
     
     
@@ -39,5 +41,9 @@ class loginVC: UIViewController {
         let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
+    }
+    @IBAction func backButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        
     }
 }

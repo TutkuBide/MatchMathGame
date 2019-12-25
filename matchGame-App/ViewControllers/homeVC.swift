@@ -13,8 +13,16 @@ class homeVC: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var highScoreLabel: UILabel!
     
+    @IBOutlet weak var leaderboardButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        playButton.layer.cornerRadius = 25
+        playButton.clipsToBounds = true
+        leaderboardButton.layer.cornerRadius = 25
+        leaderboardButton.clipsToBounds = true
         
         
     }
@@ -53,6 +61,8 @@ class homeVC: UIViewController {
     @IBAction func leaderBordButton(_ sender: Any) {
         performSegue(withIdentifier: "toLeaderbord", sender: nil)
     }
+    
+    
     
     
 }

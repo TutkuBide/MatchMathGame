@@ -13,10 +13,11 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     
     @IBOutlet weak var levelLabel: UILabel!
-    
     @IBOutlet weak var collectionVC: UICollectionView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    
+    
     
     var timer = Timer()
     var timeCounter = 0
@@ -40,6 +41,7 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
         getScore()
         self.getLevels(with: 1)
         self.collectionVC.reloadData()
+        modelArray.shuffle()
     }
     
     @objc func timerFunction() {
@@ -90,21 +92,25 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
         }
     }
     
-    func checkLevel() {
-           modelArray.removeAll()
-           if levelCounter == 2 {
-               self.getLevels(with: 2)
-           } else if levelCounter == 3 {
-               self.getLevels(with: 3)
-           } else if levelCounter == 4 {
-               self.getLevels(with: 4)
-           }
-           self.collectionVC.reloadData()
-       }
+    func levelUpdate() {
+        modelArray.removeAll()
+        if levelCounter == 2 {
+            self.levelLabel.text = "Level 2"
+            self.getLevels(with: 2)
+        } else if levelCounter == 3 {
+            self.levelLabel.text = "Level 3"
+            self.getLevels(with: 3)
+        } else if levelCounter == 4 {
+            self.levelLabel.text = "Level 4"
+            self.getLevels(with: 4)
+        }
+        modelArray.shuffle()
+        self.collectionVC.reloadData()
+    }
     
     
     
-   
+    
     
     func levelFinished() {
         var iscompleted = 0
@@ -117,7 +123,7 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
         
         if iscompleted == modelArray.count {
             self.levelCounter = levelCounter + 1
-            checkLevel()
+            levelUpdate()
             
             if levelCounter == 5 {
                 timer.invalidate()
@@ -154,7 +160,7 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
         }
     }
     
-   
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return modelArray.count
@@ -168,28 +174,28 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-           
-           modelArray[indexPath.row].showCard = true
-           collectionVC.reloadData()
-           
-           selectCounter = selectCounter + 1
-           
-           if selectCounter == 1 {
-               selectIndexPath = indexPath.row
-           } else if selectCounter == 2 {
-               if modelArray[indexPath.row].imageMatched != modelArray[selectIndexPath].imageMatched {
-                   self.collectionVC.isUserInteractionEnabled = false
-                   DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-                       self.modelArray[indexPath.row].showCard = false
-                       self.modelArray[self.selectIndexPath].showCard = false
-                       self.collectionVC.isUserInteractionEnabled = true
-                       self.collectionVC.reloadData()
-                   }
-               }
-               selectCounter = 0
-           }
-           levelFinished()
-       }
+        
+        modelArray[indexPath.row].showCard = true
+        collectionVC.reloadData()
+        
+        selectCounter = selectCounter + 1
+        
+        if selectCounter == 1 {
+            selectIndexPath = indexPath.row
+        } else if selectCounter == 2 {
+            if modelArray[indexPath.row].imageMatched != modelArray[selectIndexPath].imageMatched {
+                self.collectionVC.isUserInteractionEnabled = false
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                    self.modelArray[indexPath.row].showCard = false
+                    self.modelArray[self.selectIndexPath].showCard = false
+                    self.collectionVC.isUserInteractionEnabled = true
+                    self.collectionVC.reloadData()
+                }
+            }
+            selectCounter = 0
+        }
+        levelFinished()
+    }
     
     
 }

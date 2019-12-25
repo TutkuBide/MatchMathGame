@@ -10,12 +10,12 @@ import Foundation
 struct gameModel {
     
     var imageName: String
-    var imageID: Int
-    var status: Bool
+    var imageMatched: Int
+    var showCard: Bool
     
-    init(imageName:String, imageID: Int, status: Bool) {
+    init(imageName:String, imageMatched: Int, showCard: Bool) {
         self.imageName = imageName
-        self.imageID = imageID
-        self.status = status
+        self.imageMatched = imageMatched
+        self.showCard = showCard
     }
 }

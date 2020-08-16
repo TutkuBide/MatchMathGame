@@ -11,7 +11,8 @@ import Firebase
 import FirebaseAuth
 
 
-class registerVC: UIViewController {
+class RegisterViewController: UIViewController {
+    
     @IBOutlet weak var mailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var confirmPasswordText: UITextField!
@@ -22,13 +23,10 @@ class registerVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         registerButton.layer.cornerRadius = 25
         registerButton.clipsToBounds = true
         backLogin.layer.cornerRadius = 25
         backLogin.clipsToBounds = true
-        
-        
     }
     
     
@@ -38,7 +36,6 @@ class registerVC: UIViewController {
                 if error != nil {
                     self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
                 }else{
-                    
                     let userDictionary = ["Username" : self.mailText.text!, "Password" : self.passwordText.text!, "Highscore" : self.highScore] as [String : Any]
                     let fireStore = Firestore.firestore()
                     fireStore.collection("UserInformation").addDocument(data: userDictionary) { (error) in
@@ -52,11 +49,9 @@ class registerVC: UIViewController {
         }else{
             self.makeAlert(title: "error", message: "hata")
         }
-        
     }
     
     @IBAction func backLogin(_ sender: Any) {
-        
         performSegue(withIdentifier: "toLogin", sender: nil)
     }
     
@@ -69,7 +64,6 @@ class registerVC: UIViewController {
     
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
-
     }
     
 }

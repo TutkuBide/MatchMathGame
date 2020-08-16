@@ -12,16 +12,16 @@
 		85950246239C195F0096DC28 /* LeaderBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85950245239C195F0096DC28 /* LeaderBoardTableViewCell.swift */; };
 		85A3174B239607E600E7D551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3174A239607E600E7D551 /* AppDelegate.swift */; };
 		85A3174D239607E600E7D551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3174C239607E600E7D551 /* SceneDelegate.swift */; };
-		85A3174F239607E600E7D551 /* signVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3174E239607E600E7D551 /* signVC.swift */; };
+		85A3174F239607E600E7D551 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3174E239607E600E7D551 /* SignViewController.swift */; };
 		85A31752239607E600E7D551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A31750239607E600E7D551 /* Main.storyboard */; };
 		85A31754239607E700E7D551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A31753239607E700E7D551 /* Assets.xcassets */; };
 		85A31757239607E700E7D551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A31755239607E700E7D551 /* LaunchScreen.storyboard */; };
-		85A317632396169900E7D551 /* registerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A317622396169800E7D551 /* registerVC.swift */; };
-		85A8A7FF239A975A003B4A6B /* gameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8A7FE239A975A003B4A6B /* gameModel.swift */; };
-		85A93F96239A645A00B71B7C /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F95239A645A00B71B7C /* loginVC.swift */; };
-		85A93F98239A652700B71B7C /* gameScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F97239A652700B71B7C /* gameScreenVC.swift */; };
-		85A93F9A239A655000B71B7C /* leaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F99239A654F00B71B7C /* leaderBoardVC.swift */; };
-		85A93F9C239A67D400B71B7C /* homeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F9B239A67D400B71B7C /* homeVC.swift */; };
+		85A317632396169900E7D551 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A317622396169800E7D551 /* RegisterViewController.swift */; };
+		85A8A7FF239A975A003B4A6B /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8A7FE239A975A003B4A6B /* GameModel.swift */; };
+		85A93F96239A645A00B71B7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F95239A645A00B71B7C /* LoginViewController.swift */; };
+		85A93F98239A652700B71B7C /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F97239A652700B71B7C /* GameScreenViewController.swift */; };
+		85A93F9A239A655000B71B7C /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F99239A654F00B71B7C /* LeaderBoardViewController.swift */; };
+		85A93F9C239A67D400B71B7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F9B239A67D400B71B7C /* HomeViewController.swift */; };
 		85A93F9E239A684E00B71B7C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A93F9D239A684E00B71B7C /* CollectionViewCell.swift */; };
 		85A93FA0239A693B00B71B7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85A93F9F239A693A00B71B7C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -34,17 +34,17 @@
 		85A31747239607E600E7D551 /* matchGame-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "matchGame-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A3174A239607E600E7D551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85A3174C239607E600E7D551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85A3174E239607E600E7D551 /* signVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signVC.swift; sourceTree = "<group>"; };
+		85A3174E239607E600E7D551 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		85A31751239607E600E7D551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85A31753239607E700E7D551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85A31756239607E700E7D551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85A31758239607E700E7D551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85A317622396169800E7D551 /* registerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerVC.swift; sourceTree = "<group>"; };
-		85A8A7FE239A975A003B4A6B /* gameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameModel.swift; sourceTree = "<group>"; };
-		85A93F95239A645A00B71B7C /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
-		85A93F97239A652700B71B7C /* gameScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameScreenVC.swift; sourceTree = "<group>"; };
-		85A93F99239A654F00B71B7C /* leaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderBoardVC.swift; sourceTree = "<group>"; };
-		85A93F9B239A67D400B71B7C /* homeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeVC.swift; sourceTree = "<group>"; };
+		85A317622396169800E7D551 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		85A8A7FE239A975A003B4A6B /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		85A93F95239A645A00B71B7C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		85A93F97239A652700B71B7C /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		85A93F99239A654F00B71B7C /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
+		85A93F9B239A67D400B71B7C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		85A93F9D239A684E00B71B7C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		85A93F9F239A693A00B71B7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F91690C8115970CE39C8895B /* Pods-matchGame-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-matchGame-App.debug.xcconfig"; path = "Target Support Files/Pods-matchGame-App/Pods-matchGame-App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		85025EA0239B0E5B00B05AF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				85A8A7FE239A975A003B4A6B /* gameModel.swift */,
+				85A8A7FE239A975A003B4A6B /* GameModel.swift */,
 				85950243239BE5C20096DC28 /* levelModelView.swift */,
 			);
 			path = Model;
@@ -83,9 +83,9 @@
 		85025EA1239B0E7D00B05AF4 /* Sign */ = {
 			isa = PBXGroup;
 			children = (
-				85A3174E239607E600E7D551 /* signVC.swift */,
-				85A317622396169800E7D551 /* registerVC.swift */,
-				85A93F95239A645A00B71B7C /* loginVC.swift */,
+				85A3174E239607E600E7D551 /* SignViewController.swift */,
+				85A317622396169800E7D551 /* RegisterViewController.swift */,
+				85A93F95239A645A00B71B7C /* LoginViewController.swift */,
 			);
 			path = Sign;
 			sourceTree = "<group>";
@@ -102,9 +102,9 @@
 		857A5A59239D147400A22B7C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				85A93F9B239A67D400B71B7C /* homeVC.swift */,
-				85A93F97239A652700B71B7C /* gameScreenVC.swift */,
-				85A93F99239A654F00B71B7C /* leaderBoardVC.swift */,
+				85A93F9B239A67D400B71B7C /* HomeViewController.swift */,
+				85A93F97239A652700B71B7C /* GameScreenViewController.swift */,
+				85A93F99239A654F00B71B7C /* LeaderBoardViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -269,16 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A3174F239607E600E7D551 /* signVC.swift in Sources */,
-				85A93F9C239A67D400B71B7C /* homeVC.swift in Sources */,
+				85A3174F239607E600E7D551 /* SignViewController.swift in Sources */,
+				85A93F9C239A67D400B71B7C /* HomeViewController.swift in Sources */,
 				85A93F9E239A684E00B71B7C /* CollectionViewCell.swift in Sources */,
-				85A93F9A239A655000B71B7C /* leaderBoardVC.swift in Sources */,
-				85A93F96239A645A00B71B7C /* loginVC.swift in Sources */,
+				85A93F9A239A655000B71B7C /* LeaderBoardViewController.swift in Sources */,
+				85A93F96239A645A00B71B7C /* LoginViewController.swift in Sources */,
 				85950246239C195F0096DC28 /* LeaderBoardTableViewCell.swift in Sources */,
-				85A8A7FF239A975A003B4A6B /* gameModel.swift in Sources */,
-				85A317632396169900E7D551 /* registerVC.swift in Sources */,
+				85A8A7FF239A975A003B4A6B /* GameModel.swift in Sources */,
+				85A317632396169900E7D551 /* RegisterViewController.swift in Sources */,
 				85A3174B239607E600E7D551 /* AppDelegate.swift in Sources */,
-				85A93F98239A652700B71B7C /* gameScreenVC.swift in Sources */,
+				85A93F98239A652700B71B7C /* GameScreenViewController.swift in Sources */,
 				85950244239BE5C20096DC28 /* levelModelView.swift in Sources */,
 				85A3174D239607E600E7D551 /* SceneDelegate.swift in Sources */,
 			);

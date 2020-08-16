@@ -13,7 +13,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var backView: UIView!
     
 
-    func configure(model: gameModel) {
+    func configure(model: GameModel) {
         backView.isHidden = model.showCard
         imageView.image = UIImage(named: model.imageName)
     }

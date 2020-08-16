@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct gameModel {
+struct GameModel {
     
     var imageName: String
     var imageMatched: Int

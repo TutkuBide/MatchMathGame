@@ -9,22 +9,17 @@
 import UIKit
 import Firebase
 
-class leaderBoardVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class LeaderBoardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     var usernameArray = [String]()
     var highScoreArray = [Int]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         getData()
-        
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,13 +37,11 @@ class leaderBoardVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         let fireStore = Firestore.firestore()
         fireStore.collection("UserInformation").addSnapshotListener { (snapshot, error) in
             if error != nil {
-                //
             }else{
                 if snapshot?.isEmpty != nil && snapshot != nil {
                     for document in snapshot!.documents {
                         if let userName = document.get("Username") as? String {
                             if let highScore = document.get("Highscore") as? Int {
-                                
                                 self.usernameArray.append(userName)
                                 self.highScoreArray.append(highScore)
                             }
@@ -59,12 +52,7 @@ class leaderBoardVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
             }
         }
     }
-    
-    
-    
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
-        
     }
-    
 }

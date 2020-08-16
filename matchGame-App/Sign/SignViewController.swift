@@ -8,13 +8,13 @@
 
 import UIKit
 
-class signVC: UIViewController {
+class SignViewController: UIViewController {
+    
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         registerButton.layer.cornerRadius = 25
         registerButton.clipsToBounds = true
         loginButton.layer.cornerRadius = 25

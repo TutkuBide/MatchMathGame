@@ -9,19 +9,16 @@
 import UIKit
 import Firebase
 
-class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+class GameScreenViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var collectionVC: UICollectionView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
-    
-    
     var timer = Timer()
     var timeCounter = 0
-    var modelArray = [gameModel]()
+    var modelArray = [GameModel]()
     var selectCounter = 0
     var selectIndexPath = 0
     var levelCounter = 1
@@ -29,15 +26,12 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         collectionVC.delegate = self
         collectionVC.dataSource = self
-        
         scoreLabel.text = "Score: 0"
         timeCounter = 150
         timeLabel.text = "Time: \(timeCounter)"
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(gameScreenVC.timerFunction), userInfo: nil, repeats: true)
-        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameScreenViewController.timerFunction), userInfo: nil, repeats: true)
         getScore()
         self.getLevels(with: 1)
         self.collectionVC.reloadData()
@@ -45,24 +39,20 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     @objc func timerFunction() {
-        
         timeCounter = timeCounter - 1
         timeLabel.text = "Time: \(timeCounter)"
-        
         if timeCounter == 0 {
             timer.invalidate()
-            
             let alert = UIAlertController(title: "Uyarı", message: "Süre Doldu", preferredStyle: UIAlertController.Style.alert)
             let okButton = UIAlertAction(title: "TAMAM", style: UIAlertAction.Style.default) { (UIAlertAction) in
                 self.navigationController?.popViewController(animated: true)
             }
             alert.addAction(okButton)
             present(alert, animated: true, completion: nil)
-            
         }
     }
+    
     func timesUp() {
-        
         if timeCounter > highScore {
             let fireStore = Firestore.firestore()
             fireStore.collection("UserInformation").whereField("Username", isEqualTo: Auth.auth().currentUser!.email!).addSnapshotListener { (snapshot, error) in
@@ -108,23 +98,16 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
         self.collectionVC.reloadData()
     }
     
-    
-    
-    
-    
     func levelFinished() {
         var iscompleted = 0
-        
         for i in 0..<modelArray.count {
             if modelArray[i].showCard == true {
                 iscompleted = iscompleted + 1
             }
         }
-        
         if iscompleted == modelArray.count {
             self.levelCounter = levelCounter + 1
             levelUpdate()
-            
             if levelCounter == 5 {
                 timer.invalidate()
                 self.scoreLabel.text = "Score: \(timeCounter)"
@@ -135,19 +118,14 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
                 timesUp()
                 alert.addAction(okButton)
                 present(alert, animated: true, completion: nil)
-                
             }
         }
     }
-    
-    
-    
+
     func getScore() {
-        
         let fireStore = Firestore.firestore()
         fireStore.collection("UserInformation").whereField("Username", isEqualTo: Auth.auth().currentUser!.email!).addSnapshotListener { (snapshot, error) in
             if error != nil {
-                //
             } else {
                 if snapshot?.isEmpty != true && snapshot != nil {
                     for document in snapshot!.documents {
@@ -160,8 +138,6 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
         }
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return modelArray.count
     }
@@ -170,16 +146,12 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
         let cell = collectionVC.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.configure(model: modelArray[indexPath.row])
         return cell
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         modelArray[indexPath.row].showCard = true
         collectionVC.reloadData()
-        
         selectCounter = selectCounter + 1
-        
         if selectCounter == 1 {
             selectIndexPath = indexPath.row
         } else if selectCounter == 2 {
@@ -196,6 +168,4 @@ class gameScreenVC: UIViewController, UICollectionViewDelegate, UICollectionView
         }
         levelFinished()
     }
-    
-    
 }
